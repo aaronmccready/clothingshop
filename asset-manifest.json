@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/clothingshop/static/css/main.24090e02.chunk.css",
+    "main.js": "/clothingshop/static/js/main.771a3520.chunk.js",
+    "main.js.map": "/clothingshop/static/js/main.771a3520.chunk.js.map",
+    "runtime-main.js": "/clothingshop/static/js/runtime-main.334e6191.js",
+    "runtime-main.js.map": "/clothingshop/static/js/runtime-main.334e6191.js.map",
+    "static/js/2.74283844.chunk.js": "/clothingshop/static/js/2.74283844.chunk.js",
+    "static/js/2.74283844.chunk.js.map": "/clothingshop/static/js/2.74283844.chunk.js.map",
+    "static/js/3.c0c6d599.chunk.js": "/clothingshop/static/js/3.c0c6d599.chunk.js",
+    "static/js/3.c0c6d599.chunk.js.map": "/clothingshop/static/js/3.c0c6d599.chunk.js.map",
+    "index.html": "/clothingshop/index.html",
+    "static/css/main.24090e02.chunk.css.map": "/clothingshop/static/css/main.24090e02.chunk.css.map",
+    "static/js/2.74283844.chunk.js.LICENSE.txt": "/clothingshop/static/js/2.74283844.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/clothingshop/static/media/DINNextW01-CondensedRegular.d1ce5a75.woff2",
+    "static/media/Logo.db28c409.png": "/clothingshop/static/media/Logo.db28c409.png",
+    "static/media/App.css": "/clothingshop/static/media/shirts2.ebf3e398.jpg",
+    "static/media/icons8-facebook.d8ecc4d9.svg": "/clothingshop/static/media/icons8-facebook.d8ecc4d9.svg",
+    "static/media/icons8-instagram.9e3ad4e1.svg": "/clothingshop/static/media/icons8-instagram.9e3ad4e1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.334e6191.js",
+    "static/js/2.74283844.chunk.js",
+    "static/css/main.24090e02.chunk.css",
+    "static/js/main.771a3520.chunk.js"
+  ]
+}
