@@ -1,0 +1,1022 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "DINNextW01-CondensedRegular", sans-serif;
+}
+body,
+html {
+	width: 100vw;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+button {
+	font-family: "DINNextW01-CondensedRegular", sans-serif;
+	font-weight: bold;
+}
+button:hover {
+	cursor: pointer;
+}
+#navBarList {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0%;
+	width: 100%;
+	height: 100%;
+}
+#navBarRight {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+#navBarContainer {
+	background-color: rgb(233, 238, 240);
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	min-height: 80px;
+	font-size: 1.3em;
+}
+a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+span {
+	padding: 10px;
+}
+.increaseOrDecreaseQtyContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* margin: 2% 0 2% 0; */
+	width: 100%;
+}
+.increaseOrDecreaseQtyContainer > button {
+	background-color: rgb(233, 238, 240);
+}
+.increaseOrDecreaseQtyContainer > button:hover {
+	background: rgb(213, 219, 221);
+}
+.increaseQty,
+.decreaseQty,
+.displayQty {
+	height: 3vh;
+	width: 5vw;
+	max-width: 61px;
+	border: none;
+	text-align: center;
+	border: solid 1px #9c9c9c;
+	min-width: 23px;
+	min-height: 29px;
+}
+
+@media only screen and (max-width: 375px) {
+	.increaseQty,
+	.decreaseQty,
+	.displayQty {
+		height: 4vh;
+		width: 10vw;
+	}
+}
+
+.addToCartButton,
+.deleteFromCartButton {
+	width: 100%;
+	min-width: 100px;
+	min-height: 38px;
+	height: 4vh;
+
+	padding: 5px;
+	border-radius: 5px;
+	transition: 300ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.addToCartButton {
+	font-size: 1.1em;
+}
+.cancelOrderButton {
+	width: 172px;
+	line-height: 1.5em;
+
+	font-size: 1.5em;
+
+	padding: 5px;
+	background: #bd0808;
+	border: solid 1px transparent;
+	color: white;
+
+	transition: 300ms;
+}
+.cancelOrderButton:hover {
+	background: #e91b1b;
+}
+
+.addToCartButton,
+.deleteFromCartButton {
+	background: white;
+	color: black;
+	border: solid 1px #9c9c9c;
+}
+.addToCartButton:hover {
+	background: #0d8600;
+	border: solid 1px transparent;
+	color: white;
+}
+
+.deleteFromCartButton:hover {
+	background: #ce0909;
+	border: solid 1px transparent;
+	color: white;
+}
+.deleteFromCartButton {
+	margin-top: 10px;
+}
+.itemDetailsButtonDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10% 0 0 0;
+	width: 100%;
+}
+.qtyChangeandAddToCartContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+@media only screen and (max-width: 884px) {
+	.qtyChangeandAddToCartContainer,
+	.itemDetailsButtonDiv {
+		margin-top: 5%;
+	}
+}
+.displayQty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: none;
+	border-left: none;
+}
+.itemCardContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+	height: 100%;
+	border: 1px solid #c4bdbd;
+	transition: 0.2s;
+}
+.colour,
+.size {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 2%;
+	height: fit-content;
+	min-height: 50px;
+	margin: 5% 0 5% 0;
+	border: 1px solid #c4bdbd;
+}
+.colour > select,
+.size > select {
+	width: 100%;
+
+	border: none;
+	font-size: 1.3em;
+}
+
+select:hover {
+	cursor: pointer;
+}
+
+.colour > .shopItemCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.colour > label,
+.size > label {
+	font-size: 0.8em;
+	margin-left: 2px;
+	color: #757272;
+}
+@media only screen and (max-width: 884px) {
+	.colour,
+	.size {
+		margin: 5% 0 5% 0;
+	}
+}
+
+#generalAccountInfoForm {
+	display: flex;
+	flex-direction: column;
+	height: 120vh;
+	padding: 0 6% 0 6%;
+}
+@media only screen and (max-width: 600px) {
+	#generalAccountInfoForm {
+		height: 150vh;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#generalAccountInfoForm {
+		height: 210vh;
+	}
+	.nextSectionButton {
+		margin: 10px 0 15px 0;
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	#generalAccountInfoForm {
+		height: 250vh;
+	}
+}
+
+#nameAndEmailDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: space-around;
+
+	height: fit-content;
+}
+
+#nameAndEmailDiv > div {
+	margin: 10px 0 10px 0;
+}
+
+#shippingAndBillingAddressContainer {
+	display: flex;
+
+	height: 50%;
+}
+@media only screen and (max-width: 600px) {
+	#shippingAndBillingAddressContainer {
+		flex-direction: column;
+		height: fit-content;
+		justify-content: space-around;
+		padding: 5% 0 5% 0;
+	}
+}
+
+#shippingAddressDiv,
+#billingAddressDiv {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+#shippingOptionsDiv {
+	height: fit-content;
+	margin: 15px 0 15px 0;
+}
+.inputFields {
+	border: 1px solid #a8a3a3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 25%;
+	height: fit-content;
+	min-width: 230px;
+	min-height: 78px;
+	padding: 6px;
+}
+
+.inputFields > label {
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#expirationMonth {
+	width: 25%;
+}
+
+.inputFields > label > input {
+	border: none;
+	width: 100%;
+	font-size: 1.4em;
+	margin-top: 3px;
+	padding: 5px;
+	border: 1px solid #e9dfdf;
+}
+
+#shippingOptionsInput {
+	border: 1px solid #a8a3a3;
+	display: flex;
+	justify-content: center;
+	margin: 2% 0 2% 0;
+	flex-direction: column;
+	width: 40%;
+	padding: 5px;
+}
+
+#shippingOptionsInput > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	margin: 5px;
+	max-width: 400px;
+}
+
+@media only screen and (max-width: 450px) {
+	#shippingOptionsInput {
+		width: 60%;
+	}
+	#shippingOptionsInput > div {
+		width: 80%;
+	}
+}
+
+.nextSectionButton {
+	width: 142px;
+	height: 45px;
+	border: 2px solid rgb(11, 23, 56);
+	color: rgb(11, 23, 56);
+	font-size: 1.2em;
+	min-width: 102px;
+	max-width: 142px;
+	margin-bottom: 25px;
+	background: transparent;
+	transition: 0.3s;
+}
+.nextSectionButton:hover {
+	color: white;
+	background: rgb(11, 23, 56);
+}
+
+#paymentDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 70vh;
+	padding: 6% 6% 0 6%;
+}
+
+#paymentInputField {
+	border: 1px solid #a8a3a3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 40%;
+	height: 70%;
+	min-width: 250px;
+	padding: 20px;
+	max-width: 425px;
+}
+
+#paymentInputField > label {
+	width: 100%;
+	font-size: 0.9em;
+}
+
+#paymentInputField > label > input {
+	border: none;
+	width: 100%;
+	font-size: 1.4em;
+	margin-top: 3px;
+	padding: 5px;
+	border: 1px solid #e9dfdf;
+}
+
+#paymentInputField > label:before {
+	content: " *";
+	color: red;
+	margin-right: 2px;
+	font-size: 1.2em;
+}
+
+#shippingAddressDiv > .inputFields,
+#billingAddressDiv > .inputFields {
+	width: 50%;
+	margin: 1.5% 0 1.5% 0;
+}
+
+.inputFields > label:before {
+	content: " *";
+	color: red;
+	margin-right: 2px;
+	font-size: 1.2em;
+}
+
+.itemCardContainer:hover {
+	cursor: pointer;
+
+	border: 1px solid rgb(11, 23, 56);
+}
+
+.shopItemCard * {
+	padding: 2%;
+}
+.addToCartButton {
+	padding: 2%;
+	width: 100%;
+}
+
+#accountInformationEditMode {
+	display: flex;
+	flex-direction: column;
+}
+
+#accountInformationEditMode > input,
+#accountInformationEditMode > button {
+	width: 10vw;
+}
+
+#home {
+	width: 100%;
+	height: 65vh;
+	background-image: url(./images/clothingstore.jpg);
+	background-repeat: no-repeat;
+	background-position-x: 10%;
+	background-position-y: 70%;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#homepageText {
+	position: absolute;
+	color: #fff;
+	bottom: 40%;
+	left: 7%;
+	text-shadow: 2px 2px #000000;
+}
+#startShoppingLink {
+	position: absolute;
+	top: 60%;
+	left: 75%;
+}
+
+#informationContainer {
+	height: 65vh;
+	width: 100%;
+	background-image: url(./images/clothingstore2.jpeg);
+	background-position-x: 10%;
+	background-position-y: 60%;
+	background-size: cover;
+	display: flex;
+	background-color: #f0ebeb;
+	color: white;
+	text-shadow: 2px 2px #000000;
+}
+@media only screen and (max-width: 500px) {
+	#informationContainer {
+		height: fit-content;
+	}
+}
+
+#textInnerDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 5% 30% 5% 10%;
+}
+
+#textInnerDiv > p {
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+@media only screen and (max-width: 840px) {
+	#textInnerDiv {
+		padding: 5%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#textInnerDiv {
+		font-size: 0.8em;
+	}
+}
+
+#buttonContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	background-color: #fff;
+}
+
+#buttonContainer > a {
+	height: 16vh;
+
+	width: 25%;
+	margin: 3% 5% 3% 5%;
+	transition: 0.3s;
+}
+
+#buttonContiainer > span {
+	position: absolute;
+	top: 70%;
+}
+
+#buttonContainer > a:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+	#buttonContainer {
+		flex-direction: column;
+	}
+	#buttonContainer > a {
+		width: auto;
+	}
+}
+
+#footer {
+	height: 10vh;
+	background: #191919;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10vh;
+	padding: 0 100px 0 100px;
+}
+
+#footer > label {
+	display: flex;
+	align-items: center;
+}
+@media only screen and (max-width: 840px) {
+	#footer {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		height: 15vh;
+		padding: 0 0 0 5%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#footer {
+		margin-top: 5vh;
+		font-size: 0.8em;
+		height: 20vh;
+	}
+	#footer > label {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 375px) {
+	#footer {
+		padding: 0;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 350px) {
+	#footer {
+		height: 25vh;
+	}
+}
+
+#followUsDiv {
+	text-align: center;
+}
+
+#followUsDiv > img {
+	margin: 10px;
+}
+
+@media only screen and (max-width: 840px) {
+	#followUsDiv {
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	#followUsDiv {
+		width: 100%;
+	}
+}
+
+#emailSignUpForm {
+	margin-left: 20px;
+	width: 200px;
+	height: 2rem;
+	border: none;
+	padding: 10px;
+	line-height: 1.2em;
+	border-radius: 0%;
+}
+
+#sendEmailSignUpButton {
+	width: 50px;
+	border: none;
+	height: 2rem;
+	font-size: 1.1em;
+	background: rgb(182, 181, 181);
+}
+
+#inputAndSendButtonDiv {
+	display: flex;
+	align-items: center;
+}
+
+#linkToShirts,
+#linkToPants,
+#linkToJackets {
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	background-repeat: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px #000000;
+}
+
+#linkToShirts {
+	background-image: url(./images/shirts2.jpg);
+}
+
+#linkToShirts > span,
+#linkToPants > span,
+#linkToJackets > span {
+	position: absolute;
+	top: 55%;
+}
+
+#linkToPants {
+	background-position-y: -3px;
+	background-image: url(./images/pants3.jpg);
+}
+@media only screen and (max-width: 1223px) {
+	#linkToPants {
+		background-position-y: 0;
+	}
+}
+
+#linkToJackets {
+	background-image: url(./images/jacket.jpg);
+}
+
+#startShoppingButton {
+	height: 2em;
+	width: 9em;
+	margin-top: 15px;
+
+	border: none;
+	background: #fff;
+	color: #333;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#startShoppingButton:hover {
+	cursor: pointer;
+	background: rgb(216, 214, 214);
+}
+
+#sloganHeader {
+	font-size: 700;
+}
+
+#clothingImage {
+	width: 50%;
+
+	height: auto;
+	background-position: cover;
+}
+
+#root {
+	height: 100vh;
+}
+#Logo {
+	width: 150px;
+	height: 35px;
+	max-width: 100%;
+	height: auto;
+}
+
+#shirtLogo {
+	width: 35px;
+	height: 35px;
+	max-width: 100%;
+	height: auto;
+}
+#shirtLink {
+	height: 55px;
+}
+#shopContainer {
+	min-height: 100vh;
+}
+
+.socialIcons {
+	width: 26px;
+	height: 26px;
+}
+#inShoppingCartCount {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 1.5%;
+	right: 11px;
+	border-radius: 30px;
+	background-color: #e64343;
+	height: 28px;
+	width: 29.44px;
+}
+#shoppingCartElement {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	height: 100%;
+	border-bottom: solid 3px rgb(233, 238, 240);
+}
+
+#shopElement,
+#accountElement {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: solid 3px rgb(233, 238, 240);
+	width: 40%;
+}
+#shopElement:hover,
+#accountElement:hover {
+	background: rgb(216, 214, 214);
+	border-bottom: solid 3px rgb(11, 23, 56);
+}
+#homepage {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#featured {
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	max-height: 520px;
+	object-fit: cover;
+	cursor: pointer;
+	opacity: 1;
+	border: 1px solid #c4bdbd;
+	transition: 0.3s;
+}
+.productImagesInShop,
+.productImagesInCart {
+	max-width: 100%;
+	height: auto;
+}
+.productImagesInCart {
+	max-height: 250px;
+}
+.productImagesInShop {
+	max-height: 400px;
+}
+.sliderWrapper {
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+}
+@media only screen and (max-width: 500px) {
+	.sliderWrapper {
+		display: block;
+	}
+}
+
+.productImageDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.thumbnailImages {
+	object-fit: cover;
+
+	max-width: 180px;
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px 1px 5px 3px;
+}
+.thumbnailImages:hover {
+	opacity: 1;
+}
+.active {
+	opacity: 1;
+	border: 2px solid #c4bdbd;
+}
+.cartImageDiv {
+	width: 35%;
+}
+
+#itemCardGridContainer {
+	display: grid;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: 22% 22% 22% 22%;
+	grid-template-rows: repeat(3, minmax(20%, 1fr));
+	column-gap: 2%;
+	row-gap: 1%;
+	min-height: 100%;
+	margin: 2%;
+}
+#filterContainer {
+	background-color: #c0bcbc;
+	height: 12vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#filterContainer > button {
+	height: 2em;
+	width: 9em;
+	margin-top: 15px;
+	border: 2px solid #fff;
+	background: #fff;
+	color: #333;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 2%;
+}
+
+#filterContainer > button:hover {
+	border: 2px solid #333;
+}
+#cartContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: fit-content;
+	min-height: 70vh;
+}
+.cartItemCardContainer {
+	display: flex;
+	width: 100%;
+	max-height: 290px;
+	padding: 2%;
+	border-bottom: 2px solid rgb(183, 187, 189);
+}
+.cartItemCard {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.cartItemInfoDiv {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.itemNameAndPriceContainer,
+.qtyAndRemoveButtonContainer {
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+}
+.itemNameAndPriceContainer * {
+	margin: 5px;
+}
+.itemNameAndPriceContainer {
+	align-items: flex-start;
+}
+.qtyAndRemoveButtonContainer {
+	align-items: flex-end;
+}
+
+.qtyAndRemoveButtonContainer {
+	align-items: flex-end;
+}
+
+#totalsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(183, 187, 189);
+	padding: 3%;
+	height: fit-content;
+}
+#totalsContainer * {
+	margin: 10px;
+}
+#yourCartIsEmpty,
+#thankYouForYourOrder {
+	margin: 2%;
+	text-align: center;
+}
+#checkoutButton {
+	width: 172px;
+	background: #0d8600;
+	font-size: 1.5em;
+	border: 1px solid transparent;
+	color: white;
+	padding: 5px;
+	line-height: 1.5em;
+	transition: 300ms;
+}
+#checkoutButton:hover {
+	background: #12ac01;
+}
+#buttonDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#emptyCartContainer,
+#checkoutComplete {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#goToShopElement:hover {
+	text-decoration: underline;
+}
+
+#checkoutComplete {
+	height: 70vh;
+}
+
+@media only screen and (max-width: 718px) {
+	#startShoppingLink {
+		left: 40%;
+		top: 25%;
+	}
+	#home {
+		background-position-x: 17%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#startShoppingLink {
+		left: 50%;
+		padding: 0;
+	}
+
+	#shopElement > a {
+		font-size: 0.75em;
+	}
+	#shirtLogo {
+		width: 27px;
+		height: 27px;
+	}
+	#inShoppingCartCount {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 1.5%;
+		right: 20px;
+		height: 22px;
+		width: 23px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#itemCardGridContainer {
+		grid-template-columns: 49% 49%;
+		grid-template-rows: repeat(auto-fill, minmax(13%, 1fr));
+	}
+}
+@media only screen and (max-width: 650px) {
+	#itemCardGridContainer {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(auto-fill, minmax(7%, 1fr));
+		column-gap: 1%;
+		row-gap: 30px;
+		margin: 5%;
+	}
+}

@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "DINNextW01-CondensedRegular";
+	src: local("DINNextW01-CondensedRegular"),
+		url(./DINNextW01-CondensedRegular.woff2) format("woff");
+	font-display: swap;
+}
+
+å body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
